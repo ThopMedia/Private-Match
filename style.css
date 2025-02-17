@@ -1,29 +1,319 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Default dark background */
+    color: #f4f4f4; /* Default light text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #222; /* Darker header background */
+    padding: 10px; /* Reduced padding */
     text-align: center;
-    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    margin: 50px auto;
+h1 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.5em; /* Reduced font size */
+}
+
+p {
+    color: #ccc; /* Lighter text color for paragraphs */
+}
+
+main {
     padding: 20px;
-    background: white;
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile {
-    margin-top: 20px;
+footer {
+    text-align: center;
+    background-color: #222; /* Darker footer background */
+    color: #ccc;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    height: 40px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+/* Profile Card Styles */
+.profile-card {
+    background-color: #222; /* Dark card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
 }
 
-/* Prevent Selection */
-.protected {
-    user-select: none;
+.profile-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover img {
+    transform: scale(1.05);
+}
+
+.watermark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark watermark background */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    z-index: 1;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.profile-details {
+    padding: 20px;
+    text-align: center;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Default dark background */
+    color: #f4f4f4; /* Default light text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #222; /* Darker header background */
+    padding: 10px; /* Reduced padding */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.5em; /* Reduced font size */
+}
+
+p {
+    color: #ccc; /* Lighter text color for paragraphs */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #222; /* Darker footer background */
+    color: #ccc;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background-color: #222; /* Dark card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover img {
+    transform: scale(1.05);
+}
+
+.watermark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark watermark background */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    z-index: 1;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.profile-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-details h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        margin: 0 10px 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .profile-card {
+        max-width: 400px; /* Adjust as needed */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-link {
+    color: #007bff; /* Example style */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Default dark background */
+    color: #f4f4f4; /* Default light text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #222; /* Darker header background */
+    padding: 10px; /* Reduced padding */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.5em; /* Reduced font size */
+}
+
+p {
+    color: #ccc; /* Lighter text color for paragraphs */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #222; /* Darker footer background */
+    color: #ccc;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background-color: #222; /* Dark card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover img {
+    transform: scale(1.05);
+}
+
+.watermark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark watermark background */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    z-index: 1;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.profile-details {
+    padding: 20px;
+}
+
+.profile-details h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        margin: 0 10px 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .profile-card {
+        max-width: 400px; /* Adjust as needed */
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

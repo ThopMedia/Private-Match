@@ -8,8 +8,7 @@ It prevents **screenshots, downloads, and copying**, while allowing **temporary 
 
 ## 🚀 Features  
 ✅ **Right-click, text selection, and copy disabled**  
-✅ **Screenshot prevention (limited support on browsers)**  
-✅ **Expiring links for profile privacy**  
+✅ **Screenshot prevention (limited support on browsers)** 
 ✅ **Simple static website (HTML, CSS, JS)**  
 
 ---
@@ -36,9 +35,8 @@ We plan to **upgrade Private Match** with the following:
 ---
 
 ## 🔧 How to Use  
-1. Open the **[Live Demo](https://yourusername.github.io/yourrepo/)**  
-2. The profile will **expire after 60 seconds**  
-3. **No copying, screenshots, or downloads allowed**  
+1. Open the **[Live Demo](https://privatematch.thopmedia.com)**
+2. **No copying, screenshots, or downloads allowed**  
 
 ---
 
@@ -48,11 +46,11 @@ This project is licensed under the **MIT License**, allowing open-source use wit
 ---
 
 ## 📌 Version  
-🛠 **Current Version:** `v1.0`  
-🚀 This is the **basic version** of Private Match. Future updates will include:  
-- **Backend support** for better security  
-- **Expiring links** for better privacy  
-- **User authentication** and more!  
+🛠 **Current Version:** `v1.1`
+🚀 This is the **basic version** of Private Match. Future updates will include:
+- **Backend support** for better security
+- **Expiring links** for better privacy
+- **User authentication** and more!
 
 Stay tuned for updates! 🔥  
 
@@ -67,4 +65,4 @@ If you want to **help improve this project**, feel free to:
 ---
 
 ## 📢 Share & Support  
-If you like this project, **give it a ⭐ on GitHub** and share it! 🚀  
+If you like this project, **give it a ⭐ on GitHub** and share it! 🚀

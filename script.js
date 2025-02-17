@@ -1,27 +1,30 @@
-// Disable Right-Click
-document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-// Disable Text Selection and Copying
-document.addEventListener("copy", (event) => event.preventDefault());
-
-// Prevent Screenshot (Only Works in Some Mobile Browsers)
-document.addEventListener("keydown", function (event) {
-    if (event.key === "PrintScreen") {
-        alert("Screenshots are disabled!");
-        event.preventDefault();
+// Screenshot Prevention (Frontend Only)
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'PrintScreen') {
+        e.preventDefault();
+        alert('Screenshots are disabled for this page.'); // Or any other action
     }
 });
 
-// Timer for Expiring Link
-let timer = 60;
-const timerElement = document.getElementById("timer");
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    alert('Right-click is disabled for this page.'); // Or any other action
+});
 
-const countdown = setInterval(() => {
-    timer--;
-    timerElement.textContent = timer;
+// Image Watermark (Blurred) - This is a basic example, more sophisticated methods can be used.
+const images = document.querySelectorAll('.profile-image img');
+images.forEach(img => {
+    img.style.filter = 'blur(5px)'; // Initial blur
+    img.addEventListener('mouseover', () => {
+        img.style.filter = 'blur(0px)'; // Remove blur on hover
+    });
+    img.addEventListener('mouseout', () => {
+        img.style.filter = 'blur(5px)'; // Reapply blur on mouseout
+    });
+});
 
-    if (timer === 0) {
-        clearInterval(countdown);
-        document.body.innerHTML = "<h2>Profile Expired!</h2>";
-    }
-}, 1000);
+// No Drag and Drop
+document.addEventListener('dragstart', (e) => {
+    e.preventDefault();
+});
