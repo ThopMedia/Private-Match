@@ -1,8 +1,11 @@
 # 🛡 Private Match | Secure Matrimony Profile Sharing  
 
 ## 📝 About This Project  
-**Private Match** is a privacy-focused platform to **securely share matrimonial profiles**.  
-It prevents **screenshots, downloads, and copying**, while allowing **temporary access**.  
+In India, especially in **South India**, many families prefer **local brokers and family references** over matrimonial websites to find a bride or groom. However, sharing profiles through **WhatsApp or PDFs** is risky as they can be misused.
+
+That’s why I am building Private Match – a platform that allows safe and controlled profile sharing while preventing screenshots, downloads, and unauthorized access.
+
+✨ Completely developed with AI assistance, this project ensures privacy and security for families and individuals.
 
 ---
 
