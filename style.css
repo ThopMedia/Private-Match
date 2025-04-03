@@ -340,7 +340,6 @@ footer {
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .details-container {
         flex-direction: column;
@@ -355,4 +354,17 @@ footer {
     .detail-label {
         min-width: auto;
     }
+}
+.gallery-grid {
+    -webkit-overflow-scrolling: touch; 
+    overflow-x: auto; 
+}
+
+.gallery-item {
+    touch-action: pan-y; 
+    pointer-events: none;
+}
+
+.gallery-item img {
+    pointer-events: auto; 
 }
