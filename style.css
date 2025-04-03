@@ -368,3 +368,66 @@ footer {
 .gallery-item img {
     pointer-events: auto; 
 }
+
+.profile-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 3/4;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; 
+}
+
+.gallery-item {
+    aspect-ratio: 3/4;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+    }
+    
+    .profile-image {
+        min-height: auto;
+        max-height: 40vh;
+    }
+    
+    .profile-details {
+        padding: 1.5rem;
+    }
+}
+
+.profile-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 3/4; 
+    touch-action: pan-y;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    pointer-events: none; 
+}
+
+.profile-card {
+    overflow: hidden; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.gallery-item {
+    touch-action: pan-y;
+}

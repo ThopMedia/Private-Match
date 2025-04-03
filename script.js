@@ -60,3 +60,6 @@ document.querySelectorAll('.gallery-item img').forEach(img => {
         e.stopPropagation(); 
     }, { passive: true }); 
 });
+document.querySelector('.profile-image').addEventListener('touchmove', (e) => {
+    e.stopPropagation();
+}, { passive: true });
